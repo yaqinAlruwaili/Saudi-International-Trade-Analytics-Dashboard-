@@ -61,12 +61,16 @@ To build a clean foundation, all 33 files were consolidated using a programmatic
 - **T-SQL Warehouse:** A dynamic SQL script automatically looped through all 33 tables, fixed structural differences, and merged everything into two clean tables: `Fact_Imports` and `Fact_Exports`.
 - **Product Dimension (`Dim_HS_Code`):** Imported the master reference table containing the 97 standard customs chapters to group and filter trade products by their names.
 
+
 ### 3. Data Modeling (Power BI Phase)
 
-The clean tables were connected to Power BI Desktop using **Import Mode** for maximum performance and fast visual rendering:
+The clean tables were connected to Power BI Desktop using **Import Mode** for maximum performance and fast visual rendering [1.4]:
 
+- **Unified Fact Table (`Fact_Trade`):** Combined (`Fact_Imports`) and (`Fact_Exports`) into one central table using the **Append** feature to create a single, clean transactional trade dataset.
 - **Unified Calendar (`Dim_Date`):** Created a dynamic, continuous date table directly in Power BI to handle all time-based analysis and charts.
-- **Star Schema Architecture:** Built a standard **Star Schema** model where the dimension tables (`Dim_Date` and `Dim_HS_Code`) easily filter the transactional fact tables through clean **One-to-Many (1 to *)** relationships.
+- **Star Schema Architecture:** Built a standard **Star Schema** model where all dimension tables (`Dim_Date`, `Dim_HS_Code`, and `Dim_Unique_Countries`) easily filter the single (`Fact_Trade`) table through clean **One-to-Many (1 to \*)** relationships.
+
+9
 
 ### 4. Interactive Dashboard Implementation
 
