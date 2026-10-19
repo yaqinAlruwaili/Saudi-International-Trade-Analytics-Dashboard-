@@ -70,7 +70,7 @@ The clean tables were connected to Power BI Desktop using **Import Mode** for ma
 - **Unified Calendar (`Dim_Date`):** Created a dynamic, continuous date table directly in Power BI to handle all time-based analysis and charts.
 - **Star Schema Architecture:** Built a standard **Star Schema** model where all dimension tables (`Dim_Date`, `Dim_HS_Code`, and `Dim_Unique_Countries`) easily filter the single (`Fact_Trade`) table through clean **One-to-Many (1 to \*)** relationships.
 
-9
+![Data Model](Saudi-International-Trade-Analytics-Data-Model)
 
 ### 4. Interactive Dashboard Implementation
 
