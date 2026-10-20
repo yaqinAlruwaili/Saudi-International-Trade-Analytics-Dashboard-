@@ -41,8 +41,8 @@ This Business Intelligence (BI) solution is engineered to transform raw customs 
 
 - **Publishing Entity:** Zakat, Tax and Customs Authority.
 - **Data Portal:** Saudi National Open Data Platform.
-- **Reporting Timeline:** Comprehensive time series covering 2015 to 2025, including granular quarterly tracking for recent cycles.
-- **Currency:** Saudi Riyal (SAR).
+- **Reporting Timeline:** Comprehensive time series covering 2015 to 2025 (except 2017), including granular quarterly tracking for recent cycles.
+- **Currency:** Saudi Riyal (⃁).
 
 ## The Data Journey: From Raw Chaos to Executive Insights
 
@@ -70,7 +70,7 @@ The clean tables were connected to Power BI Desktop using **Import Mode** for ma
 - **Unified Calendar (`Dim_Date`):** Created a dynamic, continuous date table directly in Power BI to handle all time-based analysis and charts.
 - **Star Schema Architecture:** Built a standard **Star Schema** model where all dimension tables (`Dim_Date`, `Dim_HS_Code`, and `Dim_Unique_Countries`) easily filter the single (`Fact_Trade`) table through clean **One-to-Many (1 to \*)** relationships.
 
-![Data Model](Saudi-International-Trade-Analytics-Data-Model.png)
+![Data Model](Saudi-International-Trade-analytics-Data-Model.png)
 
 ### 4. Interactive Dashboard Implementation
 
@@ -83,7 +83,7 @@ Designed a clean and modern single-page analytical portal using standard Power B
 
 ## Key Observations
 
-- **The Trade Gap:** The top cards show a significant gap between Total Imports (⃁4.83T) and Total Exports (⃁1.91T). This creates a negative Trade Balance of (-⃁3T). This indicates that the specific product categories analyzed rely heavily on foreign procurement.
+- **The Trade Gap:** The top cards show a significant gap between Total Imports (⃁5T) and Total Exports (⃁2T). This creates a negative Trade Balance of (-⃁3T). This indicates that the specific product categories analyzed rely heavily on foreign procurement.
 - **Import Spike After 2023:** The chart in the middle shows that imports and exports were very close until 2022. However, after 2023, imports jumped quickly. This shows a huge increase in local demand or spending on major national mega-projects.
 - **Top Products:** The product chart shows that "Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof" is the number one imported product (highest yellow column). On the other side, "Plastics and Articles Thereof" is the strongest product exported by Saudi Arabia (highest green column).
 - **Top Countries:** The country chart shows that China is the main country Saudi Arabia buys from, and second is America. As for exports, the United Arab Emirates, China, and India rank as the top three destinations for Saudi exports.
