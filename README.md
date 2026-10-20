@@ -28,7 +28,7 @@ This Business Intelligence (BI) solution is engineered to transform raw customs 
 
 ## Dashboard Preview
 
-![Saudi International Trade Analytics Dashboard](Saudi-International-Trade-analytics-dashboard.png)
+![Saudi International Trade Analytics Dashboard](Saudi-international-trade-analytics-dashboard.png)
 
 ## Tools & Technologies
 
